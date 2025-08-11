@@ -88,8 +88,8 @@ function Contactus() {
                     <div className="bg-gray-50 p-4 rounded-lg mb-6 text-center">
                         <h4 className="text-xl poppins-semibold text-[#881B1B] mb-2">Conference Secretariat</h4>
                         <p className="text-base inter-regular leading-[30px] opacity-85 mb-4">International Conference on Science, Engineering and Technology</p>
-                        <div className="flex gap-5 justify-center">
-                            <div className="flex gap-2  items-center"><IoIosMail className='flex text-[24px] shrink-0 text-[#881B1B]' /> <p className="text-base inter-regular leading-[30px] opacity-85 text-justify "> info.icscent@gmail.com</p></div>
+                        <div className="flex gap-5 flex-col lg:flex-row justify-center items-center">
+                            <div className="flex gap-2  items-center"><IoIosMail className='flex text-[24px] shrink-0 text-[#881B1B]' /> <p className="text-base inter-regular leading-[30px] opacity-85 text-justify wrap-anywhere"> info.icscent@gmail.com</p></div>
                             <div className="flex gap-2  items-center"><IoLocation className='flex text-[24px] shrink-0 text-[#881B1B]' /> <p className="text-base inter-regular leading-[30px] opacity-85 text-justify "> Bogor, Indonesia</p></div>
                         </div>
                     </div>
