@@ -1,4 +1,5 @@
 import React from 'react'
+import Marquee from 'react-fast-marquee';
 import { AiFillCalendar } from 'react-icons/ai';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import { TbPointFilled } from 'react-icons/tb';
@@ -27,6 +28,20 @@ function Home() {
 
     ]
 
+    const imageItems = [
+        { src: '/images/associates/1.png', },
+        { src: '/images/associates/2.jpg', },
+        { src: '/images/associates/3.jpg', },
+        { src: '/images/associates/4.jpg', },
+        { src: '/images/associates/5.jpg', },
+        { src: '/images/associates/6.jpg', },
+        { src: "/images/associates/scopus.png", },
+        { src: "/images/associates/8.jpg", },
+        { src: "/images/associates/9.jpg", },
+        { src: "/images/associates/10.jpg", },
+        { src: "/images/associates/11.jpg", },
+    ];
+
     return (
         <div >
             <section>
@@ -44,7 +59,7 @@ function Home() {
                             </Link> */}
                             <Link to="/paper-submission">
                                 <div className="bg-[#881B1B] text-white rounded-lg duration-300 group overflow-hidden">
-                                    <button className='lg:text-lg text-base inter-semibold py-2 px-4 cursor-pointer flex gap-2 items-center group-hover:scale-110 duration-300'>Register Here <FaArrowRightLong className='group-hover:translate-x-1 duration-300 '/></button>
+                                    <button className='lg:text-lg text-base inter-semibold py-2 px-4 cursor-pointer flex gap-2 items-center group-hover:scale-110 duration-300'>Register Here <FaArrowRightLong className='group-hover:translate-x-1 duration-300 ' /></button>
                                 </div>
                             </Link>
                         </div>
@@ -87,7 +102,7 @@ function Home() {
                         </div>
                         <Link to="/about" className='flex justify-end items-end'>
                             <div className="bg-[#881B1B] w-fit  text-white rounded-lg duration-300 lg:mt-4 mt-2 group overflow-hidden">
-                                <button className='lg:text-lg text-base inter-bold py-2 px-4 cursor-pointer flex gap-2 items-center group-hover:scale-110 duration-300'>Read more <FaArrowRightLong className='group-hover:translate-x-1 duration-300 '/></button>
+                                <button className='lg:text-lg text-base inter-bold py-2 px-4 cursor-pointer flex gap-2 items-center group-hover:scale-110 duration-300'>Read more <FaArrowRightLong className='group-hover:translate-x-1 duration-300 ' /></button>
                             </div>
                         </Link>
                     </div>
@@ -97,6 +112,8 @@ function Home() {
             <div className="container mx-auto px-4 py-8 lg:py-10 xl:py-10 2xl:py-16 ">
                 <div className="w-full h-px bg-gradient-to-r from-transparent via-[#881B1B] to-transparent"></div>
             </div>
+
+
 
             <section className="max-w-[1400px] mx-auto  2xl:px-0 px-4 lg:pb-15 pb-10">
                 <div className="flex lg:flex-row flex-col  gap-0 lg:gap-10 ">
@@ -135,6 +152,23 @@ function Home() {
                     </div>
                 </div>
             </section>
+
+            <div className="max-w-[1600px] mx-auto">
+                <div className=" pt-10 space-y-10   px-4">
+                    <h2 className="text-[#881B1B] poppins-semibold lg:text-[34px] text-[24px] text-center">Indexed Journals</h2>
+                    <p className="text-center inter-medium opacity-85 text-[18px] leading-[30px] max-w-[1000px] mx-auto">The Selective accepted papers of our International Conference on Science, Engineering and Technology will be recommended to publish in the following index & publisher Journals.</p>
+                </div>
+                <Marquee direction='right' gradient pauseOnClick pauseOnHover>
+                    <div className="  flex  pb-10 pt-10 ">
+                        {imageItems.map((item, index) => (
+                            <div key={index} className=" flex justify-center mr-10  py-5" >
+                                <img src={item.src} alt="images" className=" w-[300px] rounded-lg shadow-[0_0_8px_rgba(0,0,0,0.15)] hover:shadow-[0_0_20px_rgba(0,0,0,0.15)] transition duratiom-300" />
+                            </div>
+                        ))}
+                    </div>
+                </Marquee>
+
+            </div>
 
 
         </div>
