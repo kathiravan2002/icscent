@@ -29,7 +29,7 @@ const Footer = () => {
               <ul className=' lg:text-base text-sm inter-medium space-y-2'>
                 <li><Link to="/" className="">Home</Link></li>
                 <li> <Link to='/about'>About the Conference</Link></li>
-                <li><Link to='/organizing-committee'>Organization Committee</Link></li>
+                {/* <li><Link to='/organizing-committee'>Organization Committee</Link></li> */}
                 <li><Link to='/editorial-board'>Editorial Board</Link> </li>
                 <li><Link to='/paper-submission'>Paper submission </Link>  </li>
 
