@@ -312,12 +312,7 @@ function Editorial() {
             expertise: "Department of Information Technology ",
             country: " Uzbekistan "
         },
-        {
-            name: "Dr.  Huiliang Zhao",
-            university: "Guizhou minzu University",
-            expertise: " Department of product design",
-            country: "China"
-        },
+       
         {
             name: "Dr.K. Karthika",
             university: "sri sairam college of Engineering",
@@ -330,12 +325,7 @@ function Editorial() {
             expertise: " Department of computer science",
             country: "Pakistan"
         },
-        {
-            name: "Dr. Qiushi Yang",
-            university: "City University of Hong Kong",
-            expertise: " Department of Electronic Engineering",
-            country: "China"
-        },
+      
        
         {
             name: "Dr.R. Arun Kumar",
