@@ -15,28 +15,28 @@ function Editorial() {
 
         {
             name: "Dr. Sutikno",
-            university: "  University of Diponegoro",
-            expertise: " Department of Informatics",
+            university: "University of Diponegoro",
+            expertise: "Department of Informatics",
             country: "Indonesia"
         },
         {
             name: "Dr. Marwan Ramdhany Edy",
             university: "Universitas Negeri Makassar",
-            expertise: " Department of Informatics and Computer Engineering",
+            expertise: "Department of Informatics and Computer Engineering",
             country: "Indonesia"
         },
 
         {
             name: "Dr. Yogi Pratama",
             university: "Al Insyirah Institute of Health and Technology",
-            expertise: " Department of Medical Informatics",
+            expertise: "Department of Medical Informatics",
             country: "Indonesia"
         },
         {
             name: "Dr. Citra Fathia Palembang",
             university: "Pattimura University",
-            expertise: " Department of Computer Science",
-            country: " Indonesia "
+            expertise: "Department of Computer Science",
+            country: "Indonesia"
         },
 
         {
@@ -88,14 +88,14 @@ function Editorial() {
         },
         {
             name: "Dr. Ammar Amjad",
-            university: " National Yang ming chiao tung university",
-            expertise: "Department of Computer Science and Engineering ",
+            university: " National Yang Ming Chiao Tung University",
+            expertise: "Department of Computer Science and Engineering",
             country: "Taiwan"
         },
         {
             name: "Dr. Sowmipriya Rajendiran",
             university: "International School of Information Processing Sciences",
-            expertise: "Department of Computer Science and Engineering ",
+            expertise: "Department of Computer Science and Engineering",
             country: "France"
         },
         {
@@ -155,7 +155,7 @@ function Editorial() {
         {
             name: "Dr. Asma Sbeih",
             university: "Palestine Ahliya University",
-            expertise: "Department of Information Technology ",
+            expertise: "Department of Information Technology",
             country: "Palestine"
         },
         {
@@ -184,7 +184,7 @@ function Editorial() {
         {
             name: "Dr. Wasan Alamro",
             university: "Auckland University of Technology",
-            expertise: "Department of Electrical and Electronics Engineering department ",
+            expertise: "Department of Electrical and Electronics Engineering department",
             country: " New Zealand"
         },
          {
@@ -264,7 +264,7 @@ function Editorial() {
         {
             name: "Dr. Aram Sabr Tahr",
             university: "Cyprus International University",
-            expertise: "Department of Computer Science and Engineering ",
+            expertise: "Department of Computer Science and Engineering",
             country: "Cyprus"
         },
          {
@@ -307,10 +307,10 @@ function Editorial() {
             country: " Saudi Arabia"
         },
         {
-            name: "Dr.A. Gabriel ",
+            name: "Dr.A. Gabriel",
             university: "Sharda University",
-            expertise: "Department of Information Technology ",
-            country: " Uzbekistan "
+            expertise: "Department of Information Technology",
+            country: " Uzbekistan"
         },
        
         {

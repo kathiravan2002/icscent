@@ -152,6 +152,8 @@ const NavItems = ({ ToggleMenu, MenuOpen, isActive, }) => {
                                             scrollToSection(sub.id);
                                             setDropdown1(false);
                                             toggleSubDropdown(index);
+                                            ToggleMenu(false);
+
                                           }}
                                           className={`block px-4 py-1.5 rounded-md cursor-pointer ${isSubActive ? 'text-white bg-[#881B1B]' : ''
                                             }`}
@@ -170,6 +172,8 @@ const NavItems = ({ ToggleMenu, MenuOpen, isActive, }) => {
                               onClick={() => {
                                 setDropdown1(false);
                                 setSubDropdown({});
+                                ToggleMenu(false);
+
                               }}
                               className={`block px-4 py-1.5 rounded-md cursor-pointer ${isActive(link.path) ? 'text-white bg-[#881B1B]' : ''
                                 }`}
