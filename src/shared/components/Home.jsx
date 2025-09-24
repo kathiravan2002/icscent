@@ -49,7 +49,7 @@ function Home() {
                     <div className="xl:block hidden flex-55"><img src="/images/home1.jpg" alt=" image" className='lg:h-screen ' /></div>
                     <div className="flex flex-col flex-50  justify-center items-center mx-auto  space-y-2 px-4 mt-32 lg:mt-0 ">
                         <div className="max-w-[500px]"> <img src="/images/ICSCENT lOGO.png" alt="image" className="" /></div>
-                        <h2 className="  text-lg poppins-medium text-center">26<sup className="">th</sup> November, 2025 | Bogor, Indonesia</h2>
+                        <h2 className="  text-lg poppins-medium text-center">Bogor, Indonesia</h2>
                         <p className=" lg:text-lg text-base inter-medium lg:text-center text-justify leading-[30px]  ">The International Conference on Science, Engineering and Technology brings together global innovators to exchange knowledge, showcase research, and explore groundbreaking advancements across diverse scientific and engineering fields.</p>
                         <div className="flex sm:flex-row flex-col xl:gap-20 gap-5 lg:mt-5 mt-0 ">
                             {/* <Link to="/contact-us">
