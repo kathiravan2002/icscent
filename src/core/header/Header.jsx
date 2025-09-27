@@ -85,6 +85,7 @@ function Header() {
     const about = [
         { name: "About the Conference", path: "/about" },
         { name: "Scope of Conference", path: "/scope" },
+        { name: "Key Invitees", path: "/#key-invitees" },
         // { name: "Organizing Committee", path: "/organizing-committee" },
         {
             name: "Editorial Board",

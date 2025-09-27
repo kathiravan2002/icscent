@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Marquee from 'react-fast-marquee';
 import { AiFillCalendar } from 'react-icons/ai';
 import { FaArrowRightLong } from 'react-icons/fa6';
@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom';
 
 
 function Home() {
+
+    const [flipped, setFlipped] = useState(null);
 
     const date = [
         {
@@ -26,6 +28,27 @@ function Home() {
             date: "28-05-2025"
         },
 
+    ]
+
+    const item = [
+        {
+            name: "Dr. Hua Qu",
+            department: "Department of Biomedical Engineering and Technology",
+            university: "Tianjin Medical University",
+            location: "China",
+        },
+        {
+            name: "Dr. Awder Omar Abdulqadir",
+            department: "Department of Mathematical Physics",
+            university: "University of Halabja",
+            location: "Iraq",
+        },
+        {
+            name: "Dr. Badamasi Sani Mahammed",
+            department: "Department of Economics",
+            university: "Al-Qalam University Katsina",
+            location: "Nigeria",
+        },
     ]
 
     const imageItems = [
@@ -153,12 +176,37 @@ function Home() {
                 </div>
             </section>
 
+            <div id="key-invitees" className="max-w-[1400px] mx-auto px-4 scroll-mt-[60px]">
+                <div className=" pt-10   ">
+                    <h2 className="text-[#881B1B] poppins-semibold lg:text-[34px] text-[24px] text-center">Key Invitees</h2>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 mx-auto w-full">
+                    {item.map((person, index) => (
+                        <div
+                            className={`card group  rounded-3xl shadow-[0_0_8px_rgba(0,0,0,0.15)]  border-l-5 border-[#881B1B]  overflow-hidden relative h-38 cursor-pointer hover:-translate-y-1 transition-transform duration-300 `}
+                            onClick={() => setFlipped(flipped === index ? null : index)}
+                        >
+                            <div className={`card-front absolute inset-0 flex items-center justify-center rounded-3xl    text-black p-5 transition-all duration-300 z-10 ${flipped === index ? 'opacity-0 translate-y-full' : 'opacity-100 translate-y-0'} lg:group-hover:opacity-0 lg:group-hover:translate-y-full`}>
+                                <h2 className="md:text-xl text-lg lg:text-[21px] poppins-medium text-center  duration-300  text-[#881B1B] " >{person.name}</h2>
+                            </div>
+                            <div className={`poppins-medium card-back absolute inset-0 flex flex-col text-center items-center   rounded-3xl   border border-gray-200   justify-center text-gray-800 p-5 transition-all duration-300 ${flipped === index ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-full'} lg:group-hover:opacity-100 lg:group-hover:translate-y-0`}>
+                                <p className=" text-base mb-1">{person.department},</p>
+                                <p className="text-base mb-1 text-[#881B1B]">{person.university},</p>
+                                <p className="text-base">{person.location}.</p>
+                            </div>
+
+                        </div>
+
+                    ))}
+                </div>
+            </div>
+
             <div className="max-w-[1450px] mx-auto">
                 <div className=" lg:mt-10    px-4">
                     <h2 className="text-[#881B1B] poppins-semibold lg:text-[34px] text-[24px] text-center">Indexed Journals</h2>
                     <p className="text-center inter-medium opacity-85 text-[18px] leading-[30px] max-w-[1000px] mx-auto mt-4">The Selective accepted papers of our International Conference on Science, Engineering and Technology will be recommended to publish in the following index & publisher Journals.</p>
                 </div>
-                <Marquee direction='right'  pauseOnClick pauseOnHover>
+                <Marquee direction='right' pauseOnClick pauseOnHover>
                     <div className="  flex  pb-10 pt-10 ">
                         {imageItems.map((item, index) => (
                             <div key={index} className=" flex justify-center mr-10  py-5" >
